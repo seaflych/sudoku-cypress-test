@@ -43,7 +43,8 @@ export const Game: React.FC<{}> = () => {
    * Creates a new game and initializes the state variables.
    */
   function _createNewGame(e?: React.ChangeEvent<HTMLSelectElement>) {
-    let [ temporaryInitArray, temporarySolvedArray ] = getUniqueSudoku(difficulty, e);
+    // ignore
+    let [ temporaryInitArray, temporarySolvedArray ] = window.starting&& window.solved?[window.starting, window.solved]:getUniqueSudoku(difficulty, e);
 
     setInitArray(temporaryInitArray);
     setGameArray(temporaryInitArray);
