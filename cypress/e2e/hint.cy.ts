@@ -12,3 +12,5 @@ describe('hint', () => {
     cy.get('.overlay__text').contains('You solved it').should('be.visible');
   });
 });
+
+export {};

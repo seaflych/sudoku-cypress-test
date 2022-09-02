@@ -19,3 +19,5 @@ describe('Timer', () => {
     cy.contains('.status__time', '11:40');
   });
 });
+
+export {};
